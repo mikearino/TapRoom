@@ -1,14 +1,15 @@
 
 import React from 'react';
 import { Card, ListGroup, ListGroupItem } from 'react-bootstrap';
-
+import Photo from './Photo'
 
 
 function MainList() {
   return (
     <div className="">
+
     <Card style={{ width: '18rem' }}>
-    <Card.Img variant="top" src="holder.js/100px180?text=Image cap" />
+    <Photo/>
     <Card.Body>
     <Card.Title>Beer List</Card.Title>
     <Card.Text>
