@@ -1,34 +1,17 @@
 import React from 'react';
 import '../App.css';
-import Navigation from './Navigation';
-import MainList from './MainList';
-import { Row, Col } from 'react-bootstrap';
-import Footer from './Footer';
-import { Switch, Route } from 'react-router-dom'
-import EditKegForm from './EditKegForm'
-import TapKeg from './Tapkeg'
+import { Switch, Route } from 'react-router-dom';
+import Homepage from './Homepage'
+import EditKegPage from './EditKegPage';
+import TapKegPage from './TapKegPage'
 
 function App() {
   return (
-    <div className="App">
-      <Navigation/>
-      <Row>
-      <Col md={{ span: 6, offset: 5 }}>
-        <Switch>
-          <Route exact path='/' component={App}/>
-          <Route path='/editkeg' component={EditKegForm}/>
-          <Route path='/tapkeg' component={TapKeg}/>
-        </Switch>
-
-      <MainList/>
-      </Col>
-      </Row>
-      <Row>
-      <Col>
-      <Footer/>
-      </Col>
-      </Row>
-    </div>
+    <Switch>
+      <Route exact path='/' component={Homepage}/>
+      <Route path='/editkeg' component={EditKegPage}/>
+      <Route path='/tapkeg' component={TapKegPage}/>
+    </Switch>
   );
 }
 

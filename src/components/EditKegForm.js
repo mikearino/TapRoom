@@ -1,10 +1,12 @@
 import React from 'react';
 import { Form } from 'react-bootstrap';
+import Navigation from './Navigation'
 
 
 function EditKegForm() {
   return (
     <div className="">
+      <Navigation/>
     <Form>
     <Form.Group controlId="exampleForm.ControlInput1">
     <Form.Label>Email address</Form.Label>
