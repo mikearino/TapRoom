@@ -4,8 +4,9 @@ import Navigation from './Navigation';
 import MainList from './MainList';
 import { Row, Col } from 'react-bootstrap';
 import Footer from './Footer';
-import { Switch, Route } from 'react-router'
-
+import { Switch, Route } from 'react-router-dom'
+import EditKegForm from './EditKegForm'
+import TapKeg from './Tapkeg'
 
 function App() {
   return (
@@ -14,8 +15,10 @@ function App() {
       <Row>
       <Col md={{ span: 6, offset: 5 }}>
         <Switch>
-
-         </Switch>
+          <Route exact path='/' component={App}/>
+          <Route path='/editkeg' component={EditKegForm}/>
+          <Route path='/tapkeg' component={TapKeg}/>
+        </Switch>
 
       <MainList/>
       </Col>
