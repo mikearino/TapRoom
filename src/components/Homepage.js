@@ -2,7 +2,7 @@ import React from 'react';
 import '../App.css';
 import Navigation from './Navigation';
 import MainList from './MainList';
-import { Row, Col } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 import Footer from './Footer';
 import { Switch, Route } from 'react-router-dom';
 import EditKegForm from './EditKegForm';
@@ -15,17 +15,19 @@ function App() {
 
     <div className="App">
     <Navigation />
+    <Container>
 
     <Row>
-    <Col md={{ span: 6, offset: 5 }}>
-    <MainList/>
+    <Col>
     </Col>
     </Row>
+    <MainList/>
     <Row>
     <Col>
-    <Footer/>
     </Col>
     </Row>
+    </Container>
+    <Footer/>
     </div>
 
   );

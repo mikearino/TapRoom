@@ -1,14 +1,22 @@
 
 import React from 'react';
-import { Card, ListGroup, ListGroupItem } from 'react-bootstrap';
+import { Container, Card, ListGroup, ListGroupItem } from 'react-bootstrap';
 import Photo from './Photo'
 
 
 function MainList() {
+  var mainStyles = {
+    // color: '#black',
+    // background: 'grey',
+    margin: 'auto',
+    width: '50%',
+    // border: '3px solid green',
+    padding: '10px'
+  }
   return (
-    <div className="">
-
-    <Card style={{ width: '18rem' }}>
+    <div style={mainStyles}>
+    <container>
+    <Card style={{ width: '38rem' }}>
     <Photo/>
     <Card.Body>
     <Card.Title>Beer List</Card.Title>
@@ -26,6 +34,7 @@ function MainList() {
     <Card.Link href="#">Another Link</Card.Link>
     </Card.Body>
     </Card>
+  </container>
     </div>
   );
 }
