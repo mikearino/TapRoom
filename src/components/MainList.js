@@ -15,7 +15,7 @@ function MainList() {
   }
   return (
     <div style={mainStyles}>
-    <container>
+    <Container>
     <Card style={{ width: '38rem' }}>
     <Photo/>
     <Card.Body>
@@ -34,7 +34,7 @@ function MainList() {
     <Card.Link href="#">Another Link</Card.Link>
     </Card.Body>
     </Card>
-  </container>
+  </Container>
     </div>
   );
 }

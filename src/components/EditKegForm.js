@@ -5,7 +5,8 @@ import Navigation from './Navigation'
 
 function EditKegForm() {
   var kegStyles = {
-    color: '#black',
+    color: 'white',
+    background: 'black',
     margin: 'auto',
     width: '50%',
     border: '3px solid green',
@@ -32,7 +33,7 @@ function EditKegForm() {
             <Form.Label>ABV</Form.Label>
             <Form.Control type="int" placeholder="%" />
           </Form.Group>
-          <Button variant="primary">Submit</Button>
+          <Button variant="dark">Submit</Button>
           <Form.Group controlId="exampleForm.ControlTextarea1">
             <Form.Label></Form.Label>
             <Form.Control as="textarea" rows="3" />

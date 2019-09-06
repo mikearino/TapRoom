@@ -5,8 +5,8 @@ import Navigation from './Navigation'
 
 function TapKeg() {
   var tapStyles = {
-    color: '#black',
-    background: 'grey',
+    color: 'white',
+    background: 'black',
     margin: 'auto',
     width: '50%',
     border: '3px solid green',
