@@ -5,10 +5,10 @@ function Navigation() {
   return (
     <div className="">
     <Navbar bg="dark" variant="dark">
-    <Navbar.Brand href="#home">Navbar</Navbar.Brand>
+    <Navbar.Brand href="#home">BeerMe</Navbar.Brand>
     <Nav className="mr-auto">
     <Nav.Link href="#home">Home</Nav.Link>
-    <Nav.Link href="#features">Features</Nav.Link>
+    <Nav.Link href="#features">Tap A Keg!</Nav.Link>
     <Nav.Link href="#pricing">Pricing</Nav.Link>
     </Nav>
     <Form inline>
