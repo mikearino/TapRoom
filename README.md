@@ -1,3 +1,25 @@
+# README
+# Tap Room
+
+### A keg tracker.
+
+### By _*Mike Lofgren*_ https://github.com/mikearino/TapRoom
+
+## Description
+
+_A beer list for employers and customers to keep track of kegs and contents._
+
+
+![Blank](/src/Blank.png)
+
+## Setup/Installation Requirements
+
+
+1. _Clone repository._
+2. _Enter project root directory and type "npm install"_
+3. _Type "npm run start" to start server_
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -66,3 +88,20 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+## Known Bugs
+* There are no known bugs at this time.
+
+## Technologies Used
+  * Reactjs
+  * HTML, CSS and bootstrap
+
+## Support and contact details
+
+If there are any questions, bugs or concerns, please contact mikeylofgren@gmail.com
+
+### License
+
+*This software is licensed under the MIT license*
+
+Copyright (c) 2019 **Mike Lofgren**
