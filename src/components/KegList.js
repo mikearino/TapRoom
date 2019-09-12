@@ -4,7 +4,7 @@ import { Container, Card, ListGroup, ListGroupItem } from 'react-bootstrap';
 import Photo from './Photo'
 
 
-function MainList() {
+function KegList() {
   var mainStyles = {
     // color: '#black',
     // background: 'grey',
@@ -39,4 +39,4 @@ function MainList() {
   );
 }
 
-export default MainList;
+export default KegList;

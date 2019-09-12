@@ -1,7 +1,7 @@
 import React from 'react';
 import '../App.css';
 import Navigation from './Navigation';
-import MainList from './MainList';
+import KegList from './KegList';
 import { Container, Row, Col } from 'react-bootstrap';
 import Footer from './Footer';
 import { Switch, Route } from 'react-router-dom';
@@ -21,7 +21,7 @@ function App() {
     <Col>
     </Col>
     </Row>
-    <MainList/>
+    <KegList/>
     <Row>
     <Col>
     </Col>
