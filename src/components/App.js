@@ -6,14 +6,35 @@ import NewKegControl from './NewKegControl'
 import Error404 from './Error404';
 import KegList from './KegList'
 
-function App() {
-  return (
-    <Switch>
-      <Route exact path='/' component={KegList}/>
-      <Route path='/newkeg' component={NewKegControl}/>
-      <Route component={Error404} />
-    </Switch>
-  );
+class App extends React.Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      masterKegList: []
+    };
+    this.handleAddKegToList = this.handleAddKegToList.bind(this);
+  }
+
+  handleAddKegToList(newKeg) {
+    var newMasterKegList = this.state.masterKegList.slice();
+    console.log(his.state.masterKegList)
+    newMasterKegList.push(newKeg);
+    this.setState({masterKegList: newMasterKegList});
+  }
+
+  render() {
+    return (
+      <div>
+        <Header/>
+        <Switch>
+          <Route exact path='/' component={KegList}/>
+          <Route path='/newkeg' render={()=><NewKegControl onNewKegCreation={this.handleAddKegToList} />} />
+          <Route component={Error404} />
+        </Switch>
+      </div>
+    );
+  }
 }
 
 export default App;

@@ -60,7 +60,7 @@ function NewKegForm() {
       <textarea
       id='flavor'
       placeholder='Flavor profile'
-      ref={(textarea) => {_name = textarea;}}/>
+      ref={(textarea) => {_flavor = textarea;}}/>
       <button type='submit'>Submit!</button>
     </form>
     </div>
