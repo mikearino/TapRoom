@@ -21,7 +21,7 @@ function NewKegForm() {
       placeholder='Name'/>
       <input
       type='text'
-      id='Brand'
+      id='brand'
       placeholder='Brand'/>
       <input
       type='text'
@@ -29,7 +29,7 @@ function NewKegForm() {
       placeholder='Price'/>
       <input
       type='text'
-      id='ABV'
+      id='abv'
       placeholder='ABV'/>
       <textarea
       id='flavor'

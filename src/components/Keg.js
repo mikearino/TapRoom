@@ -1,20 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function Ticket(props){
+function Keg(props){
   return (
     <div>
-      <h3>{props.location} - {props.names}</h3>
-      <p><em>{props.issue}</em></p>
+      <h3>{props.name} - {props.brand} - {props.price} - {props.abv}</h3>
+      <p><em>{props.flavor}</em></p>
       <hr/>
     </div>
   );
 }
 
-Ticket.propTypes = {
-  names: PropTypes.string.isRequired,
-  location: PropTypes.string.isRequired,
-  issue: PropTypes.string
+Keg.propTypes = {
+  name: PropTypes.string.isRequired,
+  brand: PropTypes.string.isRequired,
+  price: PropTypes.string,
+  abv: PropTypes.integer,
+  flavor: PropTypes.string
 };
 
-export default Ticket;
+export default Keg;
