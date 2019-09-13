@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types'
 
 function ConfirmationQuestions(props) {
   return(
@@ -12,4 +13,5 @@ function ConfirmationQuestions(props) {
 ConfirmationQuestions.propTypes = {
   onDrankFourLoko: PropTypes.func
 }
+
 export default ConfirmationQuestions;
