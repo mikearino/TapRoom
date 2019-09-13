@@ -1,17 +1,12 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
-function ConfirmationQuestions(props){
-  return (
+function ConfirmationQuestions() {
+  return(
     <div>
-      <p>Have you cleaned all the keg parts before you tap in to a fresh batch of Four Loko?</p>
-      <button onClick={props.onTroubleshootingConfirmation}>Yes</button>
+    <p>"Have you taken a break yet to pound a pitcher of Four Loko?"</p>
+    <button>Shirt Yeah I did!</button>
     </div>
   );
 }
-
-ConfirmationQuestions.propTypes = {
-  onTroubleshootingConfirmation: PropTypes.func
-};
 
 export default ConfirmationQuestions;
