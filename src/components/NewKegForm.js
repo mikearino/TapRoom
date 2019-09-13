@@ -22,11 +22,16 @@ function NewKegForm() {
 
   function handleNewKegFormSubmission(event) {
     event.preventDefault();
-    console.log(_name);
-    console.log(_brand);
-    console.log(_price);
-    console.log(_abv);
-    console.log(_flavor);
+    console.log(_name.value);
+    console.log(_brand.value);
+    console.log(_price.value);
+    console.log(_abv.value);
+    console.log(_flavor.value);
+    _name.value = '';
+    _brand.value = '';
+    _price.value = '';
+    _abv.value = '';
+    _flavor.value = '';
   }
 
   return (
