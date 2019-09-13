@@ -3,7 +3,7 @@ import '../App.css';
 import { Switch, Route } from 'react-router-dom';
 import Homepage from './Homepage'
 import EditKegPage from './EditKegPage';
-import TapKegPage from './TapKegPage'
+import NewKegFormPage from './NewKegFormPage'
 import Error404 from './Error404';
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
     <Switch>
       <Route exact path='/' component={Homepage}/>
       <Route path='/editkeg' component={EditKegPage}/>
-      <Route path='/tapkeg' component={TapKegPage}/>
+      <Route path='/NewKegForm' component={NewKegFormPage}/>
       <Route component={Error404} />
     </Switch>
   );

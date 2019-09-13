@@ -6,7 +6,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import Footer from './Footer';
 import { Switch, Route } from 'react-router-dom';
 import EditKegForm from './EditKegForm';
-import TapKeg from './TapKeg';
+import NewKegForm from './NewKegForm';
 import PropTypes from "prop-types";
 
 
