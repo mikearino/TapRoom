@@ -2,7 +2,7 @@ import React from 'react';
 import { Navbar, Nav, Form, Button, FormControl } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
-function Navigation() {
+function Header() {
   return (
     <div className="">
     <Navbar bg="dark" variant="dark">
@@ -22,4 +22,4 @@ function Navigation() {
   );
 }
 
-export default Navigation;
+export default Header;

@@ -1,6 +1,6 @@
 import React from 'react';
 import '../App.css';
-import Navigation from './Navigation';
+import Header from './Header';
 import KegList from './KegList';
 import { Container, Row, Col } from 'react-bootstrap';
 import Footer from './Footer';
@@ -14,7 +14,7 @@ function App() {
   return (
 
     <div className="App">
-    <Navigation />
+    <Header/>
     <Container>
 
     <Row>

@@ -1,29 +1,29 @@
 
 import React from 'react';
-import { Container, Card, ListGroup, ListGroupItem } from 'react-bootstrap';
-import Photo from './Photo'
-import Keg from './Keg'
+import Photo from './Photo';
+import Keg from './Keg';
+import PropTypes from 'prop-types';
 
-var masterTicketList = [
+var masterKegList = [
   {
     name: 'Peach passion',
     brand: 'Four Loko',
-    abv: '10',
-    price: '3.00'
+    price: 3.00,
+    abv: 10,
     flavor: 'Really good.'
   },
   {
     name: 'Raspberry plum',
     brand: 'Four Loko',
-    abv: '18',
-    price: '2.00'
+    price: 2.00,
+    abv: 18,
     flavor: 'Really great.'
   },
   {
     name: 'Watermelon grapefruit',
     brand: 'Four Loko',
-    abv: '11',
-    price: '4.00'
+    price: 4.00,
+    abv: 11,
     flavor: 'Really amazing.'
   }
 ];
@@ -38,29 +38,16 @@ function KegList() {
     padding: '10px'
   }
   return (
-    {masterKegList.map((keg, index)=>)
-    <Keg name={ke}}
-    <div style={mainStyles}>
-    <Container>
-    <Card style={{ width: '38rem' }}>
-    <Photo/>
-    <Card.Body>
-    <Card.Title>Beer List</Card.Title>
-    <Card.Text>
-    Lager
-    </Card.Text>
-    </Card.Body>
-    <ListGroup className="list-group-flush">
-    <ListGroupItem>Bapst</ListGroupItem>
-    <ListGroupItem>6.99</ListGroupItem>
-    <ListGroupItem>2.0%</ListGroupItem>
-    </ListGroup>
-    <Card.Body>
-    <Card.Link href="#">Card Link</Card.Link>
-    <Card.Link href="#">Another Link</Card.Link>
-    </Card.Body>
-    </Card>
-  </Container>
+    <div>
+      <hr/>
+    {masterKegList.map((keg, index)=>
+    <Keg name={keg.name}
+    brand={brand.name}
+    abv={abv.name}
+    price={price.name}
+    flavor={flavor.name} />
+    )}
+
     </div>
   );
 }
