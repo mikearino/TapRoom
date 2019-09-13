@@ -1,6 +1,6 @@
 import React from 'react';
 import { Row, Col, Button, Form } from 'react-bootstrap';
-
+import PropTypes from 'prop-types';
 
 
 function NewKegForm() {
@@ -27,6 +27,7 @@ function NewKegForm() {
     console.log(_price.value);
     console.log(_abv.value);
     console.log(_flavor.value);
+    props.onNewKegCreation({name: _name.value, brand: _brand.value, price: _price.value, abv: _abv.value, flavor: _flavor.value})
     _name.value = '';
     _brand.value = '';
     _price.value = '';
@@ -66,5 +67,9 @@ function NewKegForm() {
     </div>
   );
 }
+
+NewKegForm.propTypes = {
+  onNewKegCreation:PropTypes.func
+};
 
 export default NewKegForm;

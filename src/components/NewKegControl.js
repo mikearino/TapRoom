@@ -19,7 +19,7 @@ handleDrankFourLoko(){
   render(){
     let currentlyVisibleContent = null;
     if (this.state.formVisibleOnPage) {
-      currentlyVisibleContent = <NewKegForm />;
+      currentlyVisibleContent = <NewKegForm onNewKegCreation={this.props.onNewKegCreation}/>;
     } else {
       currentlyVisibleContent = <ConfirmationQuestions onDrankFourLoko= {this.handleDrankFourLoko}/>;
     }
@@ -30,5 +30,9 @@ handleDrankFourLoko(){
     );
   }
 }
+
+NewKegControl.propTypes = {
+  onNewKegCreation: PropYpes.func
+};
 
 export default NewKegControl;

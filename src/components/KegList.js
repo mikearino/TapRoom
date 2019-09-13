@@ -4,7 +4,7 @@ import Photo from './Photo';
 import Keg from './Keg';
 import PropTypes from 'prop-types';
 
-function KegList() {
+function KegList(props) {
   var mainStyles = {
     // color: '#black',
     // background: 'grey',
@@ -16,7 +16,7 @@ function KegList() {
   return (
     <div>
       <hr/>
-      {masterKegList.map((keg, index) =>
+      {props.kegList.map((keg, index) =>
         <Keg name={keg.name}
           brand={keg.brand}
           abv={keg.price}
@@ -26,5 +26,9 @@ function KegList() {
     </div>
   );
 }
+
+KegList.propTypes = {
+  kegList: PropTypes.array
+};
 
 export default KegList;
