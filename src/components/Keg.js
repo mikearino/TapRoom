@@ -1,14 +1,20 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Moment from 'moment';
 
 function Keg(props){
   return (
     <div>
       <h3>{props.name} - {props.brand} - Price: {props.price} - ABV: {props.abv}</h3>
+      <h4>Keg tapped {displayTimeOpen(props.timeOpen)} ago</h4>
       <p><em>{props.flavor}</em></p>
       <hr/>
     </div>
   );
+}
+
+function displayTimeOpen(timeOpen) {
+  return timeOpen.from(new Moment(), true);
 }
 
 Keg.propTypes = {
@@ -16,7 +22,8 @@ Keg.propTypes = {
   brand: PropTypes.string.isRequired,
   price: PropTypes.number,
   abv: PropTypes.number,
-  flavor: PropTypes.string
+  flavor: PropTypes.string,
+  timeOpen: PropTypes.instanceOf(Moment).isRequired
 };
 
 export default Keg;
