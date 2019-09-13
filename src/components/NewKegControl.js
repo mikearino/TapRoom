@@ -9,19 +9,19 @@ constructor(props) {
   this.state = {
     formVisibleOnPage: false
   };
-//   this.handleClick = this.handleClick.bind(this);
-// }
-//
-// handleClick(){
-//   this.setState({formVisibleOnPage: true});
-//   console.log('formVisibleOnPage is currently set to:' + this.state.formVisibleOnPage);
+  this.handleDrankFourLoko = this.handleDrankFourLoko.bind(this);
 }
+
+handleDrankFourLoko(){
+  this.setState({formVisibleOnPage: true});
+}
+
   render(){
     let currentlyVisibleContent = null;
     if (this.state.formVisibleOnPage) {
       currentlyVisibleContent = <NewKegForm />;
     } else {
-      currentlyVisibleContent = <ConfirmationQuestions />;
+      currentlyVisibleContent = <ConfirmationQuestions onDrankFourLoko= {this.handleDrankFourLoko}/>;
     }
     return(
       <div>
@@ -30,6 +30,5 @@ constructor(props) {
     );
   }
 }
-
 
 export default NewKegControl;
