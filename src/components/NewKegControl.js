@@ -1,6 +1,7 @@
 import React from 'react'
 import NewKegForm from './NewKegForm'
 import ConfirmationQuestions from './ConfirmationQuestions'
+import PropTypes from 'prop-types';
 
 class NewKegControl extends React.Component {
 
@@ -32,7 +33,7 @@ handleDrankFourLoko(){
 }
 
 NewKegControl.propTypes = {
-  onNewKegCreation: PropYpes.func
+  onNewKegCreation: PropTypes.func
 };
 
 export default NewKegControl;

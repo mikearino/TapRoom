@@ -1,9 +1,9 @@
 import React from 'react';
 import { Row, Col, Button, Form } from 'react-bootstrap';
 import PropTypes from 'prop-types';
+import { v4 } from 'uuid';
 
-
-function NewKegForm() {
+function NewKegForm(props) {
 
   let _name = null;
   let _brand = null;
@@ -27,7 +27,7 @@ function NewKegForm() {
     console.log(_price.value);
     console.log(_abv.value);
     console.log(_flavor.value);
-    props.onNewKegCreation({name: _name.value, brand: _brand.value, price: _price.value, abv: _abv.value, flavor: _flavor.value})
+    props.onNewKegCreation({name: _name.value, brand: _brand.value, price: _price.value, abv: _abv.value, flavor: _flavor.value, id: v4()});
     _name.value = '';
     _brand.value = '';
     _price.value = '';

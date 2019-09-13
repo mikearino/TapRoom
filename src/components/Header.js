@@ -6,11 +6,11 @@ function Header() {
   return (
     <div className="">
     <Navbar bg="dark" variant="dark">
-    <Navbar.Brand href="#home">BeerMe</Navbar.Brand>
+    <Navbar.Brand href="#/">BeerMe</Navbar.Brand>
     <Nav className="mr-auto">
     <Nav.Link href="#/">Home</Nav.Link>
 
-    <Nav.Link href="#/NewKegForm">Tap A Keg!</Nav.Link>
+    <Nav.Link href="#/newkeg">Tap A Keg!</Nav.Link>
     <Nav.Link href="#/editkeg">Edit Keg</Nav.Link>
     </Nav>
     <Form inline>
