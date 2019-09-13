@@ -40,12 +40,12 @@ function KegList() {
   return (
     <div>
       <hr/>
-    {masterKegList.map((keg, index)=>
+    {masterKegList.map((keg, index) =>
     <Keg name={keg.name}
-    brand={brand.name}
-    abv={abv.name}
-    price={price.name}
-    flavor={flavor.name} />
+    brand={keg.brand}
+    abv={keg.price}
+    price={keg.abv}
+    flavor={keg.flavor} />
     )}
 
     </div>

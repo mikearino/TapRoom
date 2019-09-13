@@ -1,6 +1,6 @@
 import React from 'react';
 import { Row, Col, Button, Form } from 'react-bootstrap';
-import Navigation from './Navigation'
+
 
 
 function NewKegForm() {
