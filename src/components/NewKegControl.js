@@ -8,10 +8,15 @@ constructor(props) {
     formVisibleOnPage: false
   }
 }
+
+handleClick(){
+  console.log("clicked me")
+}
   render(){
     return(
       <div>
       <p> This is the NewKegControl component</p>
+      <strong onClick={this.handleClick}>Click to change state</strong>
       </div>
     );
   }
