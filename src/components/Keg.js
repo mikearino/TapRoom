@@ -6,7 +6,7 @@ function Keg(props){
   return (
     <div>
       <h3>{props.name} - {props.brand} - Price: {props.price} - ABV: {props.abv}</h3>
-      <h4>Keg tapped {displayTimeOpen(props.timeOpen)} ago</h4>
+      <h4>Keg tapped {props.formattedWaitTime} ago</h4>
       <p><em>{props.flavor}</em></p>
       <hr/>
     </div>
@@ -23,7 +23,7 @@ Keg.propTypes = {
   price: PropTypes.number,
   abv: PropTypes.number,
   flavor: PropTypes.string,
-  timeOpen: PropTypes.instanceOf(Moment).isRequired
+  formattedWaitTime: PropTypes.string.isRequired,
 };
 
 export default Keg;
