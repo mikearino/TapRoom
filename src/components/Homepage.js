@@ -5,7 +5,6 @@ import KegList from './KegList';
 import { Container, Row, Col } from 'react-bootstrap';
 import Footer from './Footer';
 import { Switch, Route } from 'react-router-dom';
-
 import NewKegForm from './NewKegForm';
 import PropTypes from "prop-types";
 
@@ -16,7 +15,6 @@ function App() {
     <div className="App">
     <Header/>
     <Container>
-
     <Row>
     <Col>
     </Col>
@@ -26,8 +24,8 @@ function App() {
     <Col>
     </Col>
     </Row>
-    </Container>
     <Footer/>
+    </Container>
     </div>
 
   );

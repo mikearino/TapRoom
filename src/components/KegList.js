@@ -3,7 +3,7 @@ import React from 'react';
 import Photo from './Photo';
 import Keg from './Keg';
 import PropTypes from 'prop-types';
-
+import Four from './img/four.png';
 function KegList(props) {
   var mainStyles = {
     // color: '#black',
@@ -16,6 +16,7 @@ function KegList(props) {
   console.log(props.kegList)
   return (
     <div>
+      <img id="loko" src={Four}/>
       <hr/>
       {props.kegList.map((keg) =>
         <Keg name={keg.name}

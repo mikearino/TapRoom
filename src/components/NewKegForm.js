@@ -3,6 +3,7 @@ import { Row, Col, Button, Form } from 'react-bootstrap';
 import PropTypes from 'prop-types';
 import { v4 } from 'uuid';
 import Moment from 'moment';
+import Four from './img/four.png';
 
 function NewKegForm(props) {
 
@@ -38,6 +39,7 @@ function NewKegForm(props) {
 
   return (
     <div>
+      <img id="loko" src={Four}/>
     <form onSubmit={handleNewKegFormSubmission}>
       <input
       type='text'
