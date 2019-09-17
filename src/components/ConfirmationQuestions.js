@@ -7,7 +7,7 @@ function ConfirmationQuestions(props) {
     <div>
       <img id="loko" src={Four}/>
     <p>"Have you taken a break yet to pound a pitcher of Four Loko?"</p>
-    <button onClick={props.onDrankFourLoko}>Shirt Yeah I did!</button>
+    <button onClick={props.onDrankFourLoko}>Yeah I did!</button>
     </div>
   );
 }

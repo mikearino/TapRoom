@@ -1,5 +1,5 @@
 import React from 'react';
-import { Row, Col, Button, Form } from 'react-bootstrap';
+import { Row, Col, Button, Form, Container } from 'react-bootstrap';
 import PropTypes from 'prop-types';
 import { v4 } from 'uuid';
 import Moment from 'moment';
@@ -40,33 +40,52 @@ function NewKegForm(props) {
   return (
     <div>
       <img id="loko" src={Four}/>
-    <form onSubmit={handleNewKegFormSubmission}>
-      <input
-      type='text'
-      id='name'
-      placeholder='Name'
-      ref={(input) => {_name = input;}}/>
-      <input
-      type='text'
-      id='brand'
-      placeholder='Brand'
-      ref={(input) => {_brand = input;}}/>
-      <input
-      type='text'
-      id='price'
-      placeholder='Price'
-      ref={(input) => {_price = input;}}/>
-      <input
-      type='text'
-      id='abv'
-      placeholder='ABV'
-      ref={(input) => {_abv = input;}}/>
-      <textarea
-      id='flavor'
-      placeholder='Flavor profile'
-      ref={(textarea) => {_flavor = textarea;}}/>
-      <button type='submit'>Submit!</button>
-    </form>
+      <Container>
+      <Form onSubmit={handleNewKegFormSubmission}>
+               <Row>
+                 <Col>
+                   <Form.Control type='text'
+                     id='name'
+                     placeholder="Name"
+                     ref={(input) => {_name = input;}}/>
+
+                 </Col>
+                 <Col>
+                   <Form.Control type='text'
+                     id='brand'
+                     placeholder='Brand'
+                     ref={(input) => {_brand = input;}}/>
+
+                 </Col>
+                 <Col>
+                   <Form.Control type='number'
+                     id='price'
+                     placeholder="Price"
+                     ref={(input) => {_price = input;}}/>
+
+                 </Col>
+                 <Col>
+                   <Form.Control type='number'
+                   id='abv'
+                   placeholder='ABV'
+                   ref={(input) => {_abv = input;}}/>}/>
+
+                 </Col>
+               </Row>
+               <br/>
+               <Row>
+                 <Col>
+                   <Form.Control id='flavor'
+                   placeholder='Flavor profile'
+                   ref={(textarea) => {_flavor = textarea;}}/>
+
+                 </Col>
+                 <Button variant="primary" type="submit">
+                   Add
+                 </Button>
+               </Row>
+             </Form>
+             </Container>
     </div>
   );
 }
