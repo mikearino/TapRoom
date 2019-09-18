@@ -1,34 +1,33 @@
-import React from 'react';
-import '../App.css';
-import Header from './Header';
-import KegList from './KegList';
-import { Container, Row, Col } from 'react-bootstrap';
-import Footer from './Footer';
-import { Switch, Route } from 'react-router-dom';
-import NewKegForm from './NewKegForm';
-import PropTypes from "prop-types";
+// import React from 'react';
+// import '../App.css';
+// import Header from './Header';
+// import KegList from './KegList';
+// import { Container, Row, Col } from 'react-bootstrap';
+// import Footer from './Footer';
+// import { Switch, Route } from 'react-router-dom';
+// import NewKegForm from './NewKegForm';
+// import PropTypes from "prop-types";
 
+// function App() {
+//   return (
 
-function App() {
-  return (
+//     <div className="App">
+//     <Header/>
+//     <Container>
+//     <Row>
+//     <Col>
+//     </Col>
+//     </Row>
+//     <KegList/>
+//     <Row>
+//     <Col>
+//     </Col>
+//     </Row>
+//     <Footer/>
+//     </Container>
+//     </div>
 
-    <div className="App">
-    <Header/>
-    <Container>
-    <Row>
-    <Col>
-    </Col>
-    </Row>
-    <KegList/>
-    <Row>
-    <Col>
-    </Col>
-    </Row>
-    <Footer/>
-    </Container>
-    </div>
+//   );
+// }
 
-  );
-}
-
-export default App;
+// export default App;

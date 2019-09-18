@@ -1,14 +1,18 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import Moment from 'moment';
+import React from "react";
+import PropTypes from "prop-types";
+import Moment from "moment";
 
-function Keg(props){
+function Keg(props) {
   return (
     <div>
-      <h3>{props.name} - {props.brand} - Price: {props.price} - ABV: {props.abv}</h3>
+      <h3>
+        {props.name} - {props.brand} - Price: {props.price} - ABV: {props.abv}
+      </h3>
       <h4>Keg tapped {props.formattedWaitTime} ago</h4>
-      <p><em>{props.flavor}</em></p>
-      <hr/>
+      <p>
+        <em>{props.flavor}</em>
+      </p>
+      <hr />
     </div>
   );
 }
@@ -23,7 +27,7 @@ Keg.propTypes = {
   price: PropTypes.number,
   abv: PropTypes.number,
   flavor: PropTypes.string,
-  formattedWaitTime: PropTypes.string.isRequired,
+  formattedWaitTime: PropTypes.string.isRequired
 };
 
 export default Keg;

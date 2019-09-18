@@ -7,6 +7,8 @@ import Error404 from './Error404';
 import KegList from './KegList';
 import Header from './Header';
 import Moment from 'moment';
+import { useDispatch } from "react-redux";
+
 
 class App extends React.Component {
 
@@ -17,6 +19,7 @@ class App extends React.Component {
     };
     this.handleAddKegToList = this.handleAddKegToList.bind(this);
   }
+  
 
   componentDidMount() {
     this.waitTimeUpdateTimer = setInterval(() =>

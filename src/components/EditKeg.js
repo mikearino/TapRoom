@@ -9,14 +9,6 @@
   </Form.Group>
 </Form>
 
-
-
-
-
-
-
-
-
 <Form onSubmit={handleNewKegFormSubmission}>
          <Row>
            <Col>
