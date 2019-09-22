@@ -13,7 +13,10 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      masterKegList: []
+      masterKegList: [
+        {name: "KegName", brand: "FourLoko", abv: 4, price: 10, flavor: "nasty", key: 1, timeOpen: new Moment()},
+        {name: "KegName2", brand: "Bud Heavy", abv: 4, price: 10, flavor: "also nasty", key: 2, timeOpen: new Moment()},
+      ]
     };
     this.handleAddKegToList = this.handleAddKegToList.bind(this);
   }
